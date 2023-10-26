@@ -1,0 +1,27 @@
+python
+from netmiko import ConnectHandler
+
+# Définir les détails de connexion à l'équipement réseau
+device = {
+    'device_type': 'cisco_ios',
+    'ip': '192.168.1.1',
+    'username': 'admin',
+    'password': 'password',
+}
+
+# Se connecter à l'équipement réseau
+net_connect = ConnectHandler(**device)
+
+# Envoyer des commandes de configuration à l'équipement
+config_commands = [
+    'interface GigabitEthernet0/1',
+    'description Connected to Switch 1',
+    'no shutdown',
+]
+output = net_connect.send_config_set(config_commands)
+
+# Afficher la sortie de la configuration
+print(output)
+
+# Se déconnecter de l'équipement réseau
+net_connect.disconnect()

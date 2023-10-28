@@ -1,0 +1,10 @@
+1. Importer la bibliothèque Netmiko dans votre script Python.
+2. Créer une connexion SSH avec l'équipement réseau en utilisant les informations d'identification appropriées (adresse IP, nom d'utilisateur, mot de passe).
+3. Utiliser les commandes Netmiko pour envoyer des commandes de configuration à l'équipement réseau, telles que la création de VLAN, la configuration des interfaces, etc.
+4. Utiliser les commandes Netmiko pour récupérer des informations de l'équipement réseau, telles que les adresses IP, les routes, etc.
+5. Utiliser les commandes Netmiko pour automatiser des tâches récurrentes, telles que la sauvegarde de la configuration, la mise à jour du micrologiciel, etc.
+6. Gérer les erreurs et les exceptions qui peuvent survenir lors de l'exécution des commandes Netmiko.
+7. Fermer la connexion SSH avec l'équipement réseau une fois que toutes les opérations sont terminées.
+8. Tester le script en exécutant différentes configurations et automatisations sur l'équipement réseau.
+9. Documenter toutes les étapes, les configurations et les automatisations effectuées pour référence future.
+10. Mettre en place un plan de support et de maintenance pour assurer le bon fonctionnement continu de l'équipement réseau après sa configuration et son automatisation.
